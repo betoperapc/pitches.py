@@ -1,0 +1,21 @@
+#BOTTOM PITCH
+
+
+from mplsoccer.pitch import Pitch
+pitch = Pitch(pitch_color='grass', line_color='white', stripe=True)
+fig, ax = pitch.draw()
+
+import matplotlib.pyplot as plt
+from matplotlib.patches import Arc
+
+# Setup the pitch for STATSBOMB 
+
+
+pitch = Pitch(pitch_type='statsbomb', pitch_color='#22312b', line_color='#c7d5cc')
+fig, ax = pitch.draw(figsize=(8, 6), constrained_layout=True, tight_layout=False)
+fig.set_facecolor('#22312b')
+
+import pandas as pd
+import matplotlib.pyplot as plt
+from mplsoccer.pitch import Pitch
+import seaborn as sns
